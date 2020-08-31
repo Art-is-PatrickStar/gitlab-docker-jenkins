@@ -1,5 +1,6 @@
 ## 使用GitLab+Docker+Jenkins实现项目自动化部署
 
+项目地址
 git@gitlab.com:growing-bald/gitlab-docker-jenkins.git
 
 教程
