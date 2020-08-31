@@ -2,4 +2,5 @@
 
 git@gitlab.com:growing-bald/gitlab-docker-jenkins.git
 
-提交
+教程
+https://www.jianshu.com/p/ee4a2a9e7e30
