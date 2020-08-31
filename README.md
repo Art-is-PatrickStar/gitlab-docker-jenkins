@@ -20,13 +20,19 @@ docker pull jenkinsci/jenkins
 
 ```bash
 docker run \
-> -d \
-> -p 38080:8080 \
-> -p 50000:50000 \
-> --name jenkins \
-> --link git@gitlab.com:growing-bald \
-> -u root \
-> -v /opt/jenkins:/var/jenkins_home \
-> jenkinsci/jenkins:latest
-f7fa42d4e010833da5d9e5258855ac53d7d1c4855549e12992ceac236f3d583a
+-d \
+-p 38080:8080 \
+-p 50000:50000 \
+--name jenkins \
+-u root \
+-v /opt/jenkins:/var/jenkins_home \
+jenkinsci/jenkins:latest
+
+
 ```
+#### Jenkins登录密码
+
+```txt
+60eb52f2ad544e859673366dc43404d4
+```
+
