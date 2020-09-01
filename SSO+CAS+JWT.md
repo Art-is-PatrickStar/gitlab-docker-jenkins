@@ -127,9 +127,7 @@ Authorization: Bearer <token>
 
 Github目录树工具：
 
-![image-20200901135435495](C:\Users\wangsongwen\AppData\Roaming\Typora\typora-user-images\image-20200901135435495.png)
-
-![image-20200901135417245](C:\Users\wangsongwen\AppData\Roaming\Typora\typora-user-images\image-20200901135417245.png)
+[Gitako-Github file tree](https://github.com/EnixCoda/Gitako)
 
 #### 4. Spring Security + JWT
 
