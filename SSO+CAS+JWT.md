@@ -122,3 +122,18 @@ Authorization: Bearer <token>
 - JWT比SAML更简洁，在HTML和HTTP环境中传递更方便；
 - 在安全方面，SWT只能使用HMAC算法通过共享密钥对称签名。但是，JWT和SAML令牌可以使用X.509证书形式的公钥/私钥对进行签名。与签名JSON的简单性相比，使用XML数字签名可能会存在安全漏洞；
 - JSON解析成对象相比XML更流行、方便。
+
+***
+
+Github目录树工具：
+
+![image-20200901135435495](C:\Users\wangsongwen\AppData\Roaming\Typora\typora-user-images\image-20200901135435495.png)
+
+![image-20200901135417245](C:\Users\wangsongwen\AppData\Roaming\Typora\typora-user-images\image-20200901135417245.png)
+
+#### 4. Spring Security + JWT
+
+[教程](https://www.codesheep.cn/2019/03/14/security-jwt-hibernate/)
+
+[代码](https://github.com/hansonwang99/Spring-Boot-In-Action/tree/master/springbt_security_jwt)
+
