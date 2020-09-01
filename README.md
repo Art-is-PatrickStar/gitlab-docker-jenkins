@@ -1,16 +1,16 @@
 ## 使用GitLab+Docker+Jenkins实现项目自动化部署
 
-![img](https://upload-images.jianshu.io/upload_images/5104125-259f0d95c4ea68ce.png)
-=======
-项目地址：
+项目地址
 git@gitlab.com:growing-bald/gitlab-docker-jenkins.git
 
-教程：
+教程
 https://www.jianshu.com/p/ee4a2a9e7e30
 
 
 
-### Jenkins安装
+### Jenkins
+
+![img](D:\A\MyJustProject\gitlab-docker-jenkins\images\jenkins流程.png) 
 
 #### 拉取Jenkins镜像
 
@@ -29,11 +29,24 @@ docker run \
 -u root \
 -v /opt/jenkins:/var/jenkins_home \
 jenkinsci/jenkins:latest
-
-
 ```
 #### Jenkins登录密码
 
 ```txt
-60eb52f2ad544e859673366dc43404d4
+admin
+HengTian0.0
 ```
+
+#### Jenkins较新的数据源
+
+```sh
+https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json 
+```
+
+#### Maven安装路径
+
+```sh
+/usr/local/apache-maven-3.5.4 #maven_home
+/usr/local/maven/repo	#maven仓库
+```
+
