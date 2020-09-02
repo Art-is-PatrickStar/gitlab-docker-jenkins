@@ -22,6 +22,11 @@ public class HelloController {
     public String success(){
         return "git hook test"
     }
+
+    @GetMapping("/wswTest")
+    public String wswTest(){
+        return "Wsw Test Success!";
+    }
 }
 
 
