@@ -10,7 +10,7 @@ https://www.jianshu.com/p/ee4a2a9e7e30
 
 ### Jenkins
 
-![img](D:\A\MyJustProject\gitlab-docker-jenkins\images\jenkins流程.png) 
+![img]([https://gitlab.com/growing-bald/gitlab-docker-jenkins/-/blob/master/images/jenkins%E6%B5%81%E7%A8%8B.png](https://gitlab.com/growing-bald/gitlab-docker-jenkins/-/blob/master/images/jenkins流程.png) 
 
 #### 拉取Jenkins镜像
 
