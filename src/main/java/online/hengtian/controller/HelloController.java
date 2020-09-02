@@ -37,6 +37,11 @@ public class HelloController {
     public String fuckfuckfuck(){
         return "fuck twice";
     }
+
+    @GetMapping("/fuckThree")
+    public String fuckfuckfuckfuck(){
+        return "fuck Three";
+    }
 }
 
 
