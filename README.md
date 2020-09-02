@@ -12,6 +12,9 @@ https://www.jianshu.com/p/ee4a2a9e7e30
 
 ![images](https://gitlab.com/growing-bald/gitlab-docker-jenkins/-/raw/master/images/jenkins%E6%B5%81%E7%A8%8B.png)
 
+![images](images/jenkins%E6%B5%81%E7%A8%8B.png)
+
+
 #### 拉取Jenkins镜像
 
 ```bash
