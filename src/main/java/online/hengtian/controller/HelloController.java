@@ -33,6 +33,10 @@ public class HelloController {
     public String fuckfuck(){
         return "fuck always";
     }
+    @RequestMapping("/fucktwo")
+    public String fuckfuckfuck(){
+        return "fuck twice";
+    }
 }
 
 
