@@ -1,5 +1,6 @@
 package online.hengtian.controller;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,12 +21,17 @@ public class HelloController {
     }
     @RequestMapping("/success")
     public String success(){
-        return "git hook test"
+        return "git hook test";
     }
 
     @GetMapping("/wswTest")
     public String wswTest(){
         return "Wsw Test Success!";
+    }
+
+    @RequestMapping("/fuck")
+    public String fuckfuck(){
+        return "fuck always";
     }
 }
 

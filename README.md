@@ -51,3 +51,11 @@ https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 /usr/local/maven/repo	#maven仓库
 ```
 
+```txt
+JenkinsHook
+11b8f797685d1a118a838cbd78f3dab044
+http://JENKINS_URL/generic-webhook-trigger/invoke.
+refs/heads/master_[a-zA-Z0-9-]{1,}(?!yh)
+$ref_$project_$username
+```
+
