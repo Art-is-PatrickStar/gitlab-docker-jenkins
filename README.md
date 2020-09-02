@@ -10,7 +10,7 @@ https://www.jianshu.com/p/ee4a2a9e7e30
 
 ### Jenkins
 
-!(https://gitlab.com/growing-bald/gitlab-docker-jenkins/-/blob/master/images/jenkins流程.png?raw=true)
+![images](https://gitlab.com/growing-bald/gitlab-docker-jenkins/-/blob/master/images/jenkins%E6%B5%81%E7%A8%8B.png)
 
 #### 拉取Jenkins镜像
 
