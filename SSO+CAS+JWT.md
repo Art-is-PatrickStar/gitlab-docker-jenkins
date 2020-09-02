@@ -129,9 +129,19 @@ Github目录树工具：
 
 [Gitako-Github file tree](https://github.com/EnixCoda/Gitako)
 
+![image](images/github目录树工具.png)
+
 #### 4. Spring Security + JWT
 
-[教程](https://www.codesheep.cn/2019/03/14/security-jwt-hibernate/)
+[参考](https://www.codesheep.cn/2019/03/14/security-jwt-hibernate/)
 
 [代码](https://github.com/hansonwang99/Spring-Boot-In-Action/tree/master/springbt_security_jwt)
+
+#### 5.SpringSecurity + OAUTH2 + JWT
+
+基于Spring Security Oauth2的SSO单点登录+JWT权限控制实践
+
+[参考](https://www.codesheep.cn/2019/05/07/springbt-sso-jwt/)
+
+[代码](https://github.com/hansonwang99/Spring-Boot-In-Action/tree/master/springbt_sso_jwt)
 
