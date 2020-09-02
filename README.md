@@ -10,7 +10,7 @@ https://www.jianshu.com/p/ee4a2a9e7e30
 
 ### Jenkins
 
-![img](D:\A\MyJustProject\gitlab-docker-jenkins\images\jenkins流程.png) 
+![img](images\jenkins流程.png) 
 
 #### 拉取Jenkins镜像
 
@@ -48,5 +48,32 @@ https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json
 ```sh
 /usr/local/apache-maven-3.5.4 #maven_home
 /usr/local/maven/repo	#maven仓库
+DtK3737TToyUHxBsZrhj
 ```
 
+### CI/CD
+
+​	CI全名Continuous Integration 持续集成 
+
+​	CD全名是Continuous Deployment，是持续部署 
+
+
+
+nohup java -jar /usr/local/generate/gitlab-docker-jenkins*.jar --spring.profiles.active=dev --logging.level.root=debug &
+
+ 
+
+ ```bash
+nohup  java -jar /usr/local/generate/gitlab-docker-jenkins*.jar >runninglog 2>&1 &
+
+
+sh /usr/local/generate/deploy.sh
+ ```
+
+
+
+ 
+
+ 
+
+ 
