@@ -1,5 +1,0 @@
-server:
-  port: 31001
-spring:
-  application:
-    name: hello-world-demo
