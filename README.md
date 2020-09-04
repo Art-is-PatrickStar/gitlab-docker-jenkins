@@ -46,7 +46,7 @@ git@gitlab.com:growing-bald/gitlab-docker-jenkins.git
 
 #### 持续集成流程
 
-![1599100157201](images\敏捷开发流程.png)
+![1599100157201](images/敏捷开发流程.png)
 
 提交  -》 测试（第一轮） -》 构建 -》 测试（第二轮，可不测） -》 部署 -》 回滚（发生问题）
 
