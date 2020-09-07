@@ -146,7 +146,7 @@ HengTian0.0
 
    + 配置gitlab上的access token（用于系统配置中的gitlab配置）
      ![1599217265733](images/gitlab_token_1.png)
-     ![1599217425205](D:\A\MyJustProject\gitlab-docker-jenkins\images\gitlab_token_2.png)
+     ![1599217425205](images/gitlab_token_2.png)
 
    + 配置git的ssh凭证（服务器上生成的用于服务器的git拉取gitlab上的代码）
 
