@@ -10,6 +10,4 @@ public class WswClient1Application {
         SpringApplication.run(WswClient1Application.class, args);
     }
 
-
-
 }
