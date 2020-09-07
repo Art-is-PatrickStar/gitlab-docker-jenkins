@@ -45,13 +45,13 @@
                         /usr/local/generate
                     </outputDirectory>
                     <!--不打入jar包的文件类型或者路径-->
-                    <excludes>
-                        <exclude>**/*.properties</exclude>
-                        <exclude>**/*.xml</exclude>
-                        <exclude>**/*.yml</exclude>
-                        <exclude>static/**</exclude>
-                        <exclude>templates/**</exclude>
-                    </excludes>
+                    <!--<excludes>-->
+                        <!--<exclude>**/*.properties</exclude>-->
+                        <!--<exclude>**/*.xml</exclude>-->
+                        <!--<exclude>**/*.yml</exclude>-->
+                        <!--<exclude>static/**</exclude>-->
+                        <!--<exclude>templates/**</exclude>-->
+                    <!--</excludes>-->
                 </configuration>
             </plugin>
         </plugins>
