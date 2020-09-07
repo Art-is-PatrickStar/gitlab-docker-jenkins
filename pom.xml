@@ -101,21 +101,21 @@
     <!--配置热部署的Maven插件-->
     <build>
         <plugins>
-            <!--<plugin>
+            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.1.4.RELEASE</version>
-                &lt;!&ndash;<configuration>&ndash;&gt;
-                    &lt;!&ndash;<fork>true</fork>&ndash;&gt;
-                    &lt;!&ndash;<addResources>true</addResources>&ndash;&gt;
-                &lt;!&ndash;</configuration>&ndash;&gt;
-            </plugin>-->
-            <plugin>
-                <!-- Build an executable JAR -->
+                <!--<configuration>-->
+                    <!--<fork>true</fork>-->
+                    <!--<addResources>true</addResources>-->
+                <!--</configuration>-->
+            </plugin>
+            <!--<plugin>
+                &lt;!&ndash; Build an executable JAR &ndash;&gt;
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 
