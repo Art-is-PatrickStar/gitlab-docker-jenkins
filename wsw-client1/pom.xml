@@ -32,30 +32,27 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <outputDirectory>
-                        /usr/local/generate
-                    </outputDirectory>
-                    <!--<executable>true</executable>-->
+                    <executable>true</executable>
                 </configuration>
             </plugin>
-           <!-- <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
-                    &lt;!&ndash; 指定打包的jar包输出路径&ndash;&gt;
+                    <!-- 指定打包的jar包输出路径-->
                     <outputDirectory>
                         /usr/local/generate
                     </outputDirectory>
-                    &lt;!&ndash;不打入jar包的文件类型或者路径&ndash;&gt;
-                    &lt;!&ndash;<excludes>&ndash;&gt;
-                        &lt;!&ndash;<exclude>**/*.properties</exclude>&ndash;&gt;
-                        &lt;!&ndash;<exclude>**/*.xml</exclude>&ndash;&gt;
-                        &lt;!&ndash;<exclude>**/*.yml</exclude>&ndash;&gt;
-                        &lt;!&ndash;<exclude>static/**</exclude>&ndash;&gt;
-                        &lt;!&ndash;<exclude>templates/**</exclude>&ndash;&gt;
-                    &lt;!&ndash;</excludes>&ndash;&gt;
+                    <!--不打入jar包的文件类型或者路径-->
+                    <!--<excludes>-->
+                        <!--<exclude>**/*.properties</exclude>-->
+                        <!--<exclude>**/*.xml</exclude>-->
+                        <!--<exclude>**/*.yml</exclude>-->
+                        <!--<exclude>static/**</exclude>-->
+                        <!--<exclude>templates/**</exclude>-->
+                    <!--</excludes>-->
                 </configuration>
-            </plugin>-->
+            </plugin>
         </plugins>
     </build>
 
