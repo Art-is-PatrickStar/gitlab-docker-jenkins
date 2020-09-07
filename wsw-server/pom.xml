@@ -33,27 +33,30 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <executable>true</executable>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <!-- 指定打包的jar包输出路径-->
                     <outputDirectory>
                         /usr/local/generate
                     </outputDirectory>
-                    <!--不打入jar包的文件类型或者路径-->
-                    <!--<excludes>-->
-                        <!--<exclude>**/*.properties</exclude>-->
-                        <!--<exclude>**/*.xml</exclude>-->
-                        <!--<exclude>**/*.yml</exclude>-->
-                        <!--<exclude>static/**</exclude>-->
-                        <!--<exclude>templates/**</exclude>-->
-                    <!--</excludes>-->
+                    <!--<executable>true</executable>-->
                 </configuration>
             </plugin>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    &lt;!&ndash; 指定打包的jar包输出路径&ndash;&gt;
+                    <outputDirectory>
+                        /usr/local/generate
+                    </outputDirectory>
+                    &lt;!&ndash;不打入jar包的文件类型或者路径&ndash;&gt;
+                    &lt;!&ndash;<excludes>&ndash;&gt;
+                        &lt;!&ndash;<exclude>**/*.properties</exclude>&ndash;&gt;
+                        &lt;!&ndash;<exclude>**/*.xml</exclude>&ndash;&gt;
+                        &lt;!&ndash;<exclude>**/*.yml</exclude>&ndash;&gt;
+                        &lt;!&ndash;<exclude>static/**</exclude>&ndash;&gt;
+                        &lt;!&ndash;<exclude>templates/**</exclude>&ndash;&gt;
+                    &lt;!&ndash;</excludes>&ndash;&gt;
+                </configuration>
+            </plugin>-->
         </plugins>
     </build>
 
