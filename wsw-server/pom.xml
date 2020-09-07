@@ -66,6 +66,7 @@
                     </outputDirectory>
                     <archive>
                         <manifest>
+                            <addClasspath>true</addClasspath>
                             <mainClass>com.wsw.wswserver.WswServerApplication</mainClass>
                         </manifest>
                     </archive>
