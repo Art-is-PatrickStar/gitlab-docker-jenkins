@@ -104,17 +104,13 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <!--<configuration>-->
-                    <!--<fork>true</fork>-->
-                    <!--<addResources>true</addResources>-->
-                <!--</configuration>-->
+                <version>2.1.4.RELEASE</version>
+                <configuration>
+                    <outputDirectory>
+                        /usr/local/generate
+                    </outputDirectory>
+                </configuration>
             </plugin>
-            <!--<plugin>
-                &lt;!&ndash; Build an executable JAR &ndash;&gt;
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
-            </plugin>-->
         </plugins>
     </build>
 
