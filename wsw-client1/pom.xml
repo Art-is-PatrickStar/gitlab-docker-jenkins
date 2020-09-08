@@ -43,8 +43,8 @@
                     <outputDirectory>
                         /usr/local/generate
                     </outputDirectory>
-                    <mainClass></mainClass>
-                    <layout>jar</layout>
+                    <mainClass>com.wsw.wswclient1.WswClient1Application</mainClass>
+                    <layout>JAR</layout>
                 </configuration>
                 <executions>
                     <execution>
