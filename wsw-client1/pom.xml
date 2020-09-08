@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>wsw-client1</name>
     <description>Demo project for Spring Boot</description>
-
+    <packaging>jar</packaging>
     <parent>
         <groupId>online.hengtian</groupId>
         <artifactId>gitlab-docker-jenkins</artifactId>
