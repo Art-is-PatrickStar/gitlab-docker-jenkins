@@ -28,7 +28,7 @@
 maven命令
 
 ```bash
-clean package spring-boot:repackage install
+clean package install
 ```
 
 ### 项目部署到服务器后，启动之后访问长时间没反应
