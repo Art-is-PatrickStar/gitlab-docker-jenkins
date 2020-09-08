@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: Created in 11:31 2020/9/2
  * @Description:
  */
-@RestController
+/*@RestController
 public class TestController {
     @GetMapping("/normal")
     @PreAuthorize("hasAuthority('ROLE_NORMAL')")
@@ -28,4 +28,4 @@ public class TestController {
     public String admin() {
         return "admin permission test success !!!";
     }
-}
+}*/

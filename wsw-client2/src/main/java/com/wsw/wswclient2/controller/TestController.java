@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: Created in 11:31 2020/9/2
  * @Description:
  */
+/*
 @RestController
 public class TestController {
     @GetMapping("/normal")
@@ -29,3 +30,4 @@ public class TestController {
         return "admin permission test success !!!";
     }
 }
+*/

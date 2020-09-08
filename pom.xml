@@ -12,6 +12,8 @@
         <module>wsw-client1</module>
         <module>wsw-client2</module>
         <module>wsw-server</module>
+        <module>module</module>
+        <module>dao</module>
     </modules>
 
     <packaging>pom</packaging>
