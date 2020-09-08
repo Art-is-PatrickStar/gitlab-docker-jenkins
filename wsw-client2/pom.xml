@@ -71,7 +71,16 @@
                     <outputDirectory>
                         /usr/local/generate
                     </outputDirectory>
+                    <mainClass>com.wsw.wswclient2.WswClient2Application</mainClass>
+                    <layout>JAR</layout>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
