@@ -1,36 +1,40 @@
 package com.wsw.wswserver.entity;
 
-import java.io.Serializable;
-import java.util.Date;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import javax.persistence.*;
+import java.util.Collection;
 
 /**
  * @Author WangSongWen
- * @Date: Created in 13:38 2020/9/8
+ * @Date: Created in 10:07 2020/9/11
  * @Description:
  */
-public class User implements Serializable {
-    private static final long serialVersionUID = 5872438942257394882L;
-
+@Entity
+@Table(name = "hr")
+public class User implements UserDetails {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
+    private String name;
+
+    private String phone;
+
+    private String telephone;
+
+    private String address;
+
+    private Boolean enabled;
 
     private String username;
 
     private String password;
 
-    private String nickname;
+    private String userface;
 
-    private String email;
-
-    private Integer status;
-
-    private String createUser;
-
-    private Date createTime;
-
-    private String updateUser;
-
-    private Date updateTime;
-
+    private String remark;
 
     public Integer getId() {
         return id;
@@ -40,12 +44,48 @@ public class User implements Serializable {
         this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone == null ? null : phone.trim();
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone == null ? null : telephone.trim();
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address == null ? null : address.trim();
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
+
     public String getUsername() {
         return username;
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.username = username == null ? null : username.trim();
     }
 
     public String getPassword() {
@@ -53,62 +93,48 @@ public class User implements Serializable {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = password == null ? null : password.trim();
     }
 
-    public String getNickname() {
-        return nickname;
+    public String getUserface() {
+        return userface;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setUserface(String userface) {
+        this.userface = userface == null ? null : userface.trim();
     }
 
-    public String getEmail() {
-        return email;
+    public String getRemark() {
+        return remark;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setRemark(String remark) {
+        this.remark = remark == null ? null : remark.trim();
     }
 
-    public Integer getStatus() {
-        return status;
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true ;
     }
 
-    public void setStatus(Integer status) {
-        this.status = status;
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
     }
 
-    public String getCreateUser() {
-        return createUser;
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
     }
 
-    public void setCreateUser(String createUser) {
-        this.createUser = createUser;
+    @Override
+    public boolean isEnabled() {
+        return enabled;
     }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public String getUpdateUser() {
-        return updateUser;
-    }
-
-    public void setUpdateUser(String updateUser) {
-        this.updateUser = updateUser;
-    }
-
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return null;
     }
 }

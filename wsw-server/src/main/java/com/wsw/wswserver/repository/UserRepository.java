@@ -1,6 +1,6 @@
 package com.wsw.wswserver.repository;
 
-import com.wsw.wswserver.entity.Hr;
+import com.wsw.wswserver.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @Date: Created in 16:38 2020/9/11
  * @Description:
  */
-public interface HrRepository extends JpaRepository<Hr, Integer> {
-    Hr findHrByUsername(String username);
+public interface UserRepository extends JpaRepository<User, Integer> {
+    User findHrByUsername(String username);
 }

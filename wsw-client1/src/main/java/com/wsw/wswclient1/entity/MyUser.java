@@ -1,6 +1,5 @@
-package com.wsw.wswserver.entity;
+package com.wsw.wswclient1.entity;
 
-import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 
@@ -11,7 +10,6 @@ import java.util.Collection;
  * @Date: Created in 14:17 2020/9/10
  * @Description:
  */
-@Data
 public class MyUser extends User {
 
     private Integer departmentId;   //  举个例子，部门ID

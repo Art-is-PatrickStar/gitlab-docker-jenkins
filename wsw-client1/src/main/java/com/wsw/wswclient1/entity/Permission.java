@@ -1,4 +1,4 @@
-package com.wsw.wswserver.entity;
+package com.wsw.wswclient1.entity;
 
 import java.io.Serializable;
 import java.util.Date;

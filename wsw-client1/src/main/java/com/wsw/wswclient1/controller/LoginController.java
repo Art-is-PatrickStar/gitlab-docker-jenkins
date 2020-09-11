@@ -1,4 +1,4 @@
-package com.wsw.wswserver.controller;
+package com.wsw.wswclient1.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
