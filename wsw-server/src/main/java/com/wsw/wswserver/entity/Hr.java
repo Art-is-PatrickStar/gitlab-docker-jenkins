@@ -3,6 +3,7 @@ package com.wsw.wswserver.entity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.persistence.*;
 import java.util.Collection;
 
 /**
@@ -10,7 +11,11 @@ import java.util.Collection;
  * @Date: Created in 10:07 2020/9/11
  * @Description:
  */
+@Entity
+@Table(name = "hr")
 public class Hr implements UserDetails {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
