@@ -1,4 +1,4 @@
-package com.wsw.module.entity;
+package com.wsw.wswserver.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -7,10 +7,10 @@ import java.util.Collection;
 
 /**
  * @Author WangSongWen
- * @Date: Created in 13:38 2020/9/8
+ * @Date: Created in 10:07 2020/9/11
  * @Description:
  */
-public class User implements UserDetails {
+public class Hr implements UserDetails {
     private Integer id;
 
     private String name;

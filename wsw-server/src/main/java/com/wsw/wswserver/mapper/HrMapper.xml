@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.wsw.dao.mapper.UserMapper" >
-  <resultMap id="BaseResultMap" type="com.wsw.module.entity.User" >
+<mapper namespace="com.wsw.wswserver.mapper.HrMapper" >
+  <resultMap id="BaseResultMap" type="com.wsw.wswserver.entity.Hr" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="phone" property="phone" jdbcType="CHAR" />
@@ -29,17 +29,17 @@
     delete from hr
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.wsw.module.entity.User" >
-    insert into hr (id, name, phone, 
-      telephone, address, enabled, 
-      username, password, userface, 
+  <insert id="insert" parameterType="com.wsw.wswserver.entity.Hr" >
+    insert into hr (id, name, phone,
+      telephone, address, enabled,
+      username, password, userface,
       remark)
-    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{phone,jdbcType=CHAR}, 
-      #{telephone,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{enabled,jdbcType=BIT}, 
-      #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{userface,jdbcType=VARCHAR}, 
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{phone,jdbcType=CHAR},
+      #{telephone,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{enabled,jdbcType=BIT},
+      #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{userface,jdbcType=VARCHAR},
       #{remark,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.wsw.module.entity.User" >
+  <insert id="insertSelective" parameterType="com.wsw.wswserver.entity.Hr" >
     insert into hr
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -106,7 +106,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.wsw.module.entity.User" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.wsw.wswserver.entity.Hr" >
     update hr
     <set >
       <if test="name != null" >
@@ -139,7 +139,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.wsw.module.entity.User" >
+  <update id="updateByPrimaryKey" parameterType="com.wsw.wswserver.entity.Hr" >
     update hr
     set name = #{name,jdbcType=VARCHAR},
       phone = #{phone,jdbcType=CHAR},

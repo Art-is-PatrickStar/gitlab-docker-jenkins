@@ -1,6 +1,6 @@
 package com.wsw.wswserver.config;
 
-import com.wsw.wswserver.service.UserService;
+import com.wsw.wswserver.service.HrService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,7 +20,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
-    UserService userService;
+    private HrService hrService;
 
     @Bean
     public PasswordEncoder passwordEncoder(){
@@ -51,7 +51,7 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public DaoAuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
-        authenticationProvider.setUserDetailsService(userService);
+        authenticationProvider.setUserDetailsService(hrService);
         authenticationProvider.setPasswordEncoder(passwordEncoder());
         authenticationProvider.setHideUserNotFoundExceptions(false);
         return authenticationProvider;
