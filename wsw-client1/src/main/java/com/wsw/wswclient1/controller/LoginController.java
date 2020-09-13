@@ -1,5 +1,6 @@
 package com.wsw.wswclient1.controller;
 
+import com.wsw.wswclient1.entity.ResponseBean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,12 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoginController {
     @GetMapping("/login")
-    public String login(){
-        return "login";
-    }
-
-    @GetMapping("/")
-    public String index(){
-        return "index";
+    public ResponseBean login(){
+        return ResponseBean.error("尚未登录，请登录！");
     }
 }
