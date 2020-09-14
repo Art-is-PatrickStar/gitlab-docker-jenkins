@@ -1,12 +1,12 @@
-package com.wsw.wswserver.controller;
+package com.wsw.wswclient1.controller;
 
-import com.wsw.wswserver.entity.ResponseBean;
+import com.wsw.wswclient1.entity.ResponseBean;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author WangSongWen
- * @Date: Created in 10:59 2020/9/14
+ * @Date: Created in 13:25 2020/9/10
  * @Description:
  */
 @RestController
