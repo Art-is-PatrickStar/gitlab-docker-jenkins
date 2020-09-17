@@ -34,7 +34,8 @@ import java.io.PrintWriter;
 public class ClientWebSecurityConfigurer extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
+        http.antMatcher("/**").authorizeRequests().anyRequest().authenticated();
+        /*http.authorizeRequests()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
@@ -96,6 +97,6 @@ public class ClientWebSecurityConfigurer extends WebSecurityConfigurerAdapter {
                 })
                 .permitAll()
                 .and()
-                .csrf().disable();
+                .csrf().disable();*/
     }
 }
