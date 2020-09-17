@@ -140,5 +140,6 @@
     <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.51.Final" level="project" />
     <orderEntry type="library" name="Maven: io.projectreactor:reactor-core:3.3.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.reactivestreams:reactive-streams:1.0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.73" level="project" />
   </component>
 </module>
