@@ -11,8 +11,17 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class LoginController {
-    @GetMapping("/login")
+    /*@GetMapping("/login")
     public ResponseBean login(){
         return ResponseBean.error("尚未登录，请登录！");
+    }*/
+    @GetMapping("/login")
+    public String login(){
+        return "login";
+    }
+
+    @GetMapping("/index")
+    public String index(){
+        return "index";
     }
 }
