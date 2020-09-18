@@ -145,3 +145,7 @@ Github目录树工具：
 
 [代码](https://github.com/hansonwang99/Spring-Boot-In-Action/tree/master/springbt_sso_jwt)
 
+***
+
+![](images/SSO.png)
+

@@ -12,8 +12,6 @@
         <module>wsw-client1</module>
         <module>wsw-client2</module>
         <module>wsw-server</module>
-        <module>module</module>
-        <module>dao</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -35,6 +33,7 @@
         <mybatis.spring.boot.version>1.3.0</mybatis.spring.boot.version>
         <mybatis-spring-boot-starter.version>2.1.1</mybatis-spring-boot-starter.version>
         <hutool-all.version>5.1.0</hutool-all.version>
+        <fastjson.version>1.2.73</fastjson.version>
     </properties>
 
     <distributionManagement>
@@ -95,6 +94,11 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
             </dependency>
 
         </dependencies>

@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 /**
  * @Author WangSongWen
- * @Date: Created in 9:57 2020/9/2
+ * @Date: Created in 10:29 2020/9/11
  * @Description:
  */
 public interface UserService extends UserDetailsService {

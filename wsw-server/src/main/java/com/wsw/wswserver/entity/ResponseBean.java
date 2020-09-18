@@ -1,4 +1,4 @@
-package com.wsw.module.entity;
+package com.wsw.wswserver.entity;
 
 /**
  * @Author WangSongWen
