@@ -23,7 +23,6 @@ import java.util.concurrent.TimeUnit;
 @Configuration
 @EnableAuthorizationServer
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
-
     /**
      * 定义两个客户端应用的通行证
      *
@@ -33,14 +32,14 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-                .withClient("wsw1")
-                .secret(new BCryptPasswordEncoder().encode("123"))
+                .withClient("client1Management")
+                .secret(new BCryptPasswordEncoder().encode("user123"))
                 .authorizedGrantTypes("authorization_code", "refresh_token")
                 .scopes("all")
                 .autoApprove(false)
                 .and()
-                .withClient("wsw2")
-                .secret(new BCryptPasswordEncoder().encode("123"))
+                .withClient("client2Management")
+                .secret(new BCryptPasswordEncoder().encode("user123"))
                 .authorizedGrantTypes("authorization_code", "refresh_token")
                 .scopes("all")
                 .autoApprove(false);
