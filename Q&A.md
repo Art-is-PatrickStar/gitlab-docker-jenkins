@@ -46,3 +46,21 @@ securerandom.source=file:/dev/random
 ```bash
 securerandom.source=file:/dev/./urandom
 ```
+
+### 如何编写gitignore并使之生效
+1. 确保.gitignore文件与.git文件夹在同一目录下
+2. 语法
+    ```bash
+    #         # 此为注释 – 将被 Git 忽略
+    *.a       # 忽略所有 .a 结尾的文件
+    !lib.a    # 但 lib.a 除外（排除）
+    /TODO     # 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+    build/    # 忽略 build/ 目录下的所有文件
+    doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+    ```
+3. 配置生效
+    ```bash
+    git rm -r --cached .
+    git add .
+    git commit -m 'update .gitignore'
+    ```
